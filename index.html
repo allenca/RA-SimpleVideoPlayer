@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Simple Video Player</title>
+    <link rel="stylesheet" href="./dist/style.css">
 </head>
 <body>
-<h1>Welcome to ES6!</h1>
+<h1>Welcome to My Video Player</h1>
+<figure id="video_player">
+    <video controls poster="./images/nambia1.jpg">
+    <!-- poster is the starting image on the video -->
+        <source src="./videos/nambia1.mp4" type="video/mp4">
+        <source src="./videos/nambia1.webm" type="video/webm">
+    <!-- two sources in case one isn't supported by the browser -->
+    <!-- MIME, just says what type of file it is -->
+    <!-- might need object embedded tags inside the video block -->
+    </video>
+    <figcaption>
+        <a href="./videos/nambia1.mp4"><img src="./images/nambia1.jpg" alt="Nambia Timelapse 1"></a>
+        <a href="./videos/nambia2.mp4"><img src="./images/nambia2.jpg" alt="Nambia Timelapse 2"></a>
+        <a href="./videos/nambia3.mp4"><img src="./images/nambia3.jpg" alt="Nambia Timelapse 3"></a>
+    </figcaption>
+</figure>
 <script src="./build/bundle.js"></script>
 </body>
 </html>
